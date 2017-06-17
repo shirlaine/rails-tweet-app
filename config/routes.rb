@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
- 
-end
+  
+  resources :tweets, only: [:index, :show]
+  end

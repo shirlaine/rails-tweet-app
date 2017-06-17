@@ -3,6 +3,6 @@
 <ul>
     <!-- can do this cos it is a ruby erb file -->
     <% @tweets.each do |tweet| %>
-        <li><%= tweet.content %></li>
+        <li><%= link_to tweet.content, tweet_path(tweet) %></li>
     <% end %>
 </ul>
